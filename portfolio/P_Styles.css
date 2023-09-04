@@ -1,0 +1,941 @@
+
+body{
+    color: rgb (0,0,0);
+    font-family:'Poppins',sans-serif;
+}
+
+
+a{
+    text-decoration: none ;
+}
+
+
+.max-width{
+    max-width: auto;
+    padding: 0;
+    margin: auto;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(26,26,26);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style:none;
+    margin: 0 23px;
+}
+nav ul li a{
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 5px;
+    transition: color 1s ease;
+
+}
+nav .left{
+    font-size: 25px;
+    transition: all 1s ease;
+    color: white;
+}
+nav .left span{
+    font-size: 25px;
+    transition:all  1s ease;
+    color: crimson;
+}
+nav .left:hover{
+    color: crimson;
+}
+nav .left span:hover {
+    color: white;
+}
+nav ul li a:hover{
+    color: crimson;
+}
+
+
+.home{
+    display: flex;
+    height: 100hv;
+    min-height: 500px;
+}
+.img1{
+    width: 100%;
+  
+}
+.home .max-width{
+    margin: 0px;
+    display: flex;
+}
+.home-content{
+    position: absolute;
+    padding: 60px;
+    margin-top: 20%;
+}
+.intro1{
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+.intro2{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+.intro3{
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+.intro3 span{
+    font-size: 27px;
+    font-weight: 600;
+    color: crimson;
+}
+section{
+    padding: 50px 0px 0px 0px ;
+    max-height: 400px;
+    justify-content: center;
+}
+
+
+.about{
+    font-family: 'Poppins',sans-serif;
+    padding-bottom: 100px;
+
+}
+.about .title{
+    font-family: 'Poppins',sans-serif;
+    text-align: center ;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.title{
+    position: relative;
+}
+.title::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    bottom: 0px;
+    left: 50%;
+    margin: 15px 0;
+    height: 3px;
+    background: rgb(26,26,26);
+    transform: translateX(-50%);
+
+}
+.title::after{
+    content: "Who Am I";
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    font-size: 20px;
+    color: crimson;
+    padding: 0px;
+    background: white;
+    transform: translateX(-50%);
+
+}
+.about .about-content .left img{
+    height: 240px;
+    width: 200px;
+    object-fit: fill;
+    position: relative;
+    border-top : 10px solid white;
+    border-left: 10px solid white;
+    border-right:10px crimson;
+    border-bottom: 10px crimson;
+}
+.about .about-content .left .img-wrapper{
+    position: relative;
+    display: inline-block;
+    margin-left: 70px;
+}
+.about .about-content .left .img-wrapper::after{
+    content: '';
+    position: absolute;
+    left: .1px;
+    top: .1px;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    border: 7px solid crimson;
+    z-index: -1;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    position: relative;
+    
+}
+.about .about-content .right{
+    width: 45%;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.button{
+    font-weight: bold;
+    border: 2px solid crimson;
+    color: black;
+    padding: 5px 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: .3s ease;
+    transition-property: background-color color;
+
+}
+.button:hover{
+    color: rgb(255,255,255);
+    background-color: crimson;
+}
+.info span{
+    color: crimson;
+    font-weight: 600;
+}
+
+
+.services{
+    font-family: 'Poppins',sans-serif;
+}
+.services .serv-title{
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.title::after{
+    position: absolute;
+}
+.serv-title{
+    position: relative;
+}
+.serv-title::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    bottom: 0px;
+    left: 50%;
+    margin: 15px 0;
+    height: 3px;
+    background: rgb(255,255,255);
+    transform: translateX(-50%);
+
+}
+.serv-title::after{
+    content:'What I Provide';
+    position: absolute;
+    left: 43%;
+    bottom: -12px;
+    font-size: 20px;
+    color: crimson;
+}
+.services{
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: rgb(16,4,36);
+}
+.serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+
+    
+}
+.serv-card{
+    max-width: 200px;
+    background-color: #1a0738;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+    padding: 0 20px;
+    border-radius: 15px;
+    height: auto;
+    width: 200px;
+}
+.services .serv-card .img2{
+    height: 50px;
+    width: 50px;
+    margin: 10px 0;
+    
+    border-radius: 201px;
+
+}
+.services .serv-card:hover .img2{
+    background: crimson;
+    transition: background-color 0.3s ease;
+
+}
+.serv-card:hover{
+    background-color: rgb(23, 13, 109);
+    transition: 1s ease;
+
+}
+.services .serv-card .text1{
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 5px;
+}
+.services .serv-card .text2{
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 30px;
+
+}
+.services .serv-card .text3{
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+    width: fit-content;
+    padding-left: 50px;
+}
+
+
+.skill .skill-title{
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.skill-title{
+    position: relative;
+}
+.skill-title::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    left: 50%;
+    bottom: 0px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    transform: translateX(-50%);
+}
+.skill-title::after{
+    content: "What I Know";
+    position: absolute;
+    left: 49.5%;
+    bottom: -12px;
+    font-size: 15px;
+    color: crimson;
+    padding: 1px;
+    background: rgb(255,255,255);
+    transform: translateX(-50%);
+
+}
+.skill{
+    font-family: 'Poppins',sans-serif;
+    color: black;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    min-height: 450px;
+}
+.skill .skill-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+.skill .skill-content .column{
+    width: auto;
+}
+.skill .skill-content .left {
+    margin: 10px;
+}
+.skill .skill-content .right {
+    width: 400px;
+}
+.skill .skill-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skill .skill-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    width: 80%;
+    margin-left: 30px;
+
+}
+.skill .skill-content .right{
+    padding: 20px;
+}
+.skill .skill-content .right .span{
+    font-weight: 800;
+    font-size: 15px;
+    padding: 0px 20px;
+    
+
+}
+.skill .skill-content .left p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    max-width: 400px;
+
+}
+.right .line{
+    height: 10px;
+    width: 80%;
+    background: rgb(131,128,128);
+    position: relative;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.right .line::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+    border-radius: 10px;
+}
+.right .html::before{
+    width: 90%;
+}
+.right .css::before{
+    width: 90%;
+}
+.skill .skill-content .right .mysql::before{
+    width: 70%;
+}
+
+
+.contact{
+    background: rgb(16,4,36);
+    max-height: fit-content;
+    padding-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.contact-title{
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    position: relative;
+    color: white;
+}
+.contact-title{
+    position: relative;
+}
+.contact-title::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    left: 50%;
+    bottom: 0px;
+    height: 3px;
+    background: white;
+    transform: translateX(-50%);
+}
+.contact-title::after{
+    content: "Reach Out";
+    position: absolute;
+    left: 49.5%;
+    bottom: -12px;
+    font-size: 15px;
+    color: crimson;
+    padding: 1px;
+    background: rgb(16,4,36);
+    transform: translateX(-50%);
+
+}
+.contact-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.contact-content .right{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: fit-content;
+}
+.contact-content .left{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: fit-content;
+}
+.contact-content .left .text4{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+    padding-left: 180px;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    max-width: fit-content;
+}
+.contact-content .left .icons{
+
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+
+}
+.contact-content .left .info{
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.contact-content .right .span{
+    font-weight: 800;
+    font-size: 15px;
+    padding: 0px 20px;
+}
+.contact-content .left p{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 20px;
+    max-width: 300px;
+    color: white;
+    padding-left: 100px;
+}
+.contact-content .img9{
+
+    height: 40px;
+    width: 40px;
+    padding: 10px 10px 10px 10px;
+
+}
+.head{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 5px;
+    width: 200px;
+}
+.sub-title{
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    max-width: fit-content;
+}
+.field-name{
+    max-width: fit-content;
+}
+.fields{
+    align-items: center;
+    justify-content: space-around;
+    max-width: fit-content;
+}
+input{
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    max-width: 200px;
+}
+textarea{
+    max-height: 50px;
+    margin: 10px;
+    max-width: 180px;
+    border-radius: 10px;
+
+}
+.text6{
+    color: white;
+    margin:10px ;
+    font-family:'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    max-width: fit-content;
+}
+.button1{
+    font-weight: 400;
+    font-size: 15px;
+    border: 2px solid crimson;
+    max-width: 50px;
+    margin: 10px 10px;
+    color: white;
+    padding: 5px 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: .3s ease;
+    transition-property: background-color color;
+
+}
+.button1:hover{
+    color: rgb(255,255,255);
+    background-color: crimson;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:860px){
+    header{
+        position: relative;
+    }   
+    nav ul{
+        display: none;
+    }
+    nav .left{
+        font-size: 20px;
+        transition: all 1s ease;
+        color: white;
+        margin-right: 15px;
+    }
+    nav .left span{
+        font-size: 20px;
+        transition:all  1s ease;
+        color: crimson;
+    }
+    .img1{
+        width: 100%;
+        display: block;
+    }
+    
+
+    .about .title{
+        font-family: 'Poppins',sans-serif;
+        text-align: center ;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .title{
+        position: relative;
+    }
+    .title::before{
+        content: '';
+        position: absolute;
+        width: 180px;
+        bottom: 0px;
+        left: 50%;
+        margin: 15px 0;
+        height: 3px;
+        background: rgb(26,26,26);
+        transform: translateX(-50%);
+    
+    }
+    .title::after{
+        content: "Who Am I";
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        font-size: 20px;
+        color: crimson;
+        padding: 0px;
+        background: white;
+        transform: translateX(-50%);
+    
+    }
+    .about .about-content .left{
+        align-items: left;
+        max-width: 200px;
+        
+
+    }
+    .about .about-content .left img{
+        height: 140px;
+        width: 100px;
+        object-fit: fill;
+        position: relative;  
+    }
+    .about .about-content .left .img-wrapper{
+        position: relative;
+        display: inline-flex;
+        margin: 20px 0px;
+    }
+    .about-content{
+        display: block;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 50px;
+    }
+    .about .about-content .right{
+        width: fit-content;
+        font-size: 10px;
+        font-weight: 600;
+        margin: 40px 70px;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .about .about-content .right p{
+        margin-bottom: 20px;
+        max-width: 200px;
+    }
+    .about .about-content .right .info{
+        max-width: fit-content;
+    }
+    .button{
+        font-weight: bold;
+        border: 2px solid crimson;
+        color: black;
+        padding: 5px 20px;
+        background-color: transparent;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    
+
+    .services{
+        font-family: 'Poppins',sans-serif;
+    }
+    .services .serv-title{
+        font-family: 'Poppins',sans-serif;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .title::after{
+        position: absolute;
+    }
+    .serv-title{
+        position: relative;
+    }
+    .serv-title::before{
+        content: '';
+        position: absolute;
+        width: 180px;
+        bottom: 0px;
+        left: 50%;
+        margin: 15px 0;
+        height: 3px;
+        background: rgb(255,255,255);
+        transform: translateX(-50%);
+    
+    }
+    .serv-title::after{
+        content:'What I Provide';
+        position: absolute;
+        left: 50%;
+        bottom: -12px;
+        font-size: 20px;
+        color: crimson;
+        transform: translateX(-50%);
+    }
+    .services{
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: rgb(16,4,36);
+        max-height: fit-content;
+        width: auto;
+        justify-content: center;
+    }
+    .serv-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    
+        
+    }
+    .serv-card{
+        max-width: 50%;
+        display: block;
+        background-color: #1a0738;
+        text-align: center;
+        margin: 20px 30px;
+        padding: 0 20px;
+        border-radius: 15px;
+        height: 100px;
+        width: auto;
+    }
+    .services .serv-card .img2{
+        height: 50%;
+        width: 50px;
+        margin: 20px 10px;
+        border-radius: 201px;
+        background-color: crimson;
+    
+    }
+    .services .serv-card .text1{
+        justify-content: left;
+        font-size: 20px;
+        font-weight: 700;
+        padding-top: 25px;
+        padding-right: 20px;
+        width: 200px;
+
+    }
+    .services .serv-card .text2{
+        justify-content: left;
+        font-size: 20px;
+        font-weight: 700;
+        padding-top: 20px;
+        padding-right: 80px;
+
+    }
+    .services .serv-card .text3{
+        justify-content: left;
+        font-size: 20px;
+        font-weight: 700;
+        padding-top: 30px;
+        padding-right: 130px;
+
+    }
+    .services .serv-card p{
+        display: none;
+    }
+    .services .serv-card .box{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    .skill{
+        font-family: 'Poppins',sans-serif;
+        color: black;
+        padding-bottom: 50px;
+        margin-bottom: 20px;
+        max-height: fit-content;
+        min-height: 350px;
+    }
+    .skill-content{
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    
+    .max-width{
+        justify-content: space-around;
+
+    }
+    .contact-content{
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+    }  
+    .contact-content .right .form{
+        padding-bottom: 50px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contact-content .left{
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .contact-content .right{
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    .contact-content .left .icons{
+
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0px;
+    
+    }
+    .contact-content .left .info{
+    
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    
+    }
+    .contact-content .right .span{
+        font-weight: 800;
+        font-size: 15px;
+        padding: 0px 20px;
+        
+    
+    }
+    .contact-content .left p{
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 20px;
+        max-width: 310px;
+        color: white;
+        padding-left: 0px;
+        justify-content: center;
+    }
+    .contact-content .img9{
+        height: 40px;
+        width: 40px;
+        padding: 10px 10px 10px 10px;
+    
+    }
+    .row{
+        display: flex;
+    }
+    .text6{
+            font-size: 25px;
+            font-weight: 600;
+            margin: 10px;
+            color: crimson;
+            padding-left: 20px;
+    }
+    .contact-content .left .text4{
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        max-width: fit-content;
+        padding-left: 105px;
+    }
+    .icons{
+        justify-content: space-around;
+        align-items: center;
+    }
+}
